@@ -130,7 +130,7 @@ namespace NeonDX.Graphics
         }
         public NDX_Font CreateFont(string font_name, int size, int thickness, EnumFontType font_type = EnumFontType.Normal)
         {
-            int handle = NDX_API_Graphics2D.CreateFontToHandle(font_name, size, thickness, font_type);
+            var handle = NDX_API_Graphics2D.CreateFontToHandle(font_name, size, thickness, font_type);
             return new NDX_Font(handle);
         }
 

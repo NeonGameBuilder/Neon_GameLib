@@ -7,24 +7,13 @@ namespace NeonDX.Graphics.Font
      * 
      * 取得元： NDX_Graphics
      */
-    public sealed class NDX_Font
+    public sealed class NDX_Font : NDX_Object
     {
-        private int _handle;
-
-        /**
-         * ハンドル
-         */
-        public int Handle
-        {
-            get { return _handle; }
-        }
-
         /**
          * コンストラクタ
          */
-        public NDX_Font(int handle)
+        public NDX_Font(NDX_Handle handle) : base(handle)
         {
-            _handle = handle;
         }
     }
 }

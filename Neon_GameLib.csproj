@@ -4,10 +4,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>NeonDX Game Library</Title>
+    <Version>0.1.0</Version>
+    <Authors>stk2k</Authors>
+    <Company>sazysoft</Company>
+    <Product>NeonGameBuilder</Product>
+    <Copyright>stk2k, 2023</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/NeonGameBuilder/Neon_GameLib</RepositoryUrl>
+    <PackageTags>DxLib;C#;Game</PackageTags>
+    <IncludeSymbols>True</IncludeSymbols>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NeonDxLibApi" Version="1.0.2" />
+    <PackageReference Include="NeonDxLibApi" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
