@@ -141,6 +141,12 @@ namespace NeonDX.System
             // ウィンドウモード
             NDX_API_Window.ChangeWindowMode(_config.WindowMode);
 
+            // ウィンドウモードの場合、ウィンドウハンドルが指定されていれば設定
+            if (_config.WindowMode && _config.UserWindow != 0)
+            {
+                SetUserWindow(_config.UserWindow);
+            }
+
             // 環境情報
             _env.Init();
         }

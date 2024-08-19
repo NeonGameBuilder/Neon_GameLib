@@ -11,6 +11,7 @@ namespace NeonDX
         private bool _log_file_enabled;
         private bool _show_mouse_cursor;
         private bool _window_mode;
+        private int _user_window;
 
         /**
          * バックグラウンドでも実行する
@@ -46,6 +47,15 @@ namespace NeonDX
         {
             get { return _window_mode; }
             set { _window_mode = value; }
+        }
+
+        /**
+         * ユーザーウィンドウハンドル
+         */
+        public int UserWindow
+        {
+            get { return _user_window; }
+            set { _user_window = value; }
         }
 
         /**
